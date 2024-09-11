@@ -1,0 +1,1 @@
+# StockBlog_kohta
