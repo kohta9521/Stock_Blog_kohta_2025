@@ -1,0 +1,37 @@
+.listItemBox {
+  .link {
+    text-decoration: none;
+    .linkText {
+      position: relative;
+      display: inline-block;
+      font-size: var(--large);
+      font-weight: 600;
+      line-height: normal;
+      color: var(--main-black);
+      transition: color 0.3s ease-in-out;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: var(--main-blue);
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: var(--main-blue);
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280ox) {
+}
+
+@media screen and (max-width: 768px) {
+}
