@@ -36,31 +36,34 @@ const TopBlogCard = ({
       <Image
         className={styles.blogImage}
         src={img}
-        width={1000}
-        height={600}
+        width={1280}
+        height={800}
         alt="ブログトップの画像"
       />
-      <h3 className={styles.blogTitle}>{title}</h3>
-      <p className={styles.blogDesc}>{desc}</p>
-      <div className={styles.flexBox}>
-        <div className={styles.leftBox}>
-          <div className={styles.publishBox}>
-            <p className={styles.publishTitle}>Published on</p>
-            <p className={styles.publishText}>{publishDate}</p>
+      <span className={styles.gradation}></span>
+      <div className={styles.blogContents}>
+        <h3 className={styles.blogTitle}>{title}</h3>
+        <p className={styles.blogDesc}>{desc}</p>
+        <div className={styles.flexBox}>
+          <div className={styles.leftBox}>
+            <div className={styles.publishBox}>
+              <p className={styles.publishTitle}>Published on</p>
+              <p className={styles.publishText}>{publishDate}</p>
+            </div>
+            <div className={styles.updateBox}>
+              <p className={styles.updateTitle}>Updated on</p>
+              <p className={styles.updateText}>{updateDate}</p>
+            </div>
           </div>
-          <div className={styles.updateBox}>
-            <p className={styles.updateTitle}>Updated on</p>
-            <p className={styles.updateText}>{updateDate}</p>
+          <div className={styles.rightBox}>
+            {tag.map((tag, index) => {
+              return (
+                <p key={index} className={styles.tag}>
+                  {tag}
+                </p>
+              );
+            })}
           </div>
-        </div>
-        <div className={styles.rightBox}>
-          {tag.map((tag, index) => {
-            return (
-              <p key={index} className={styles.tag}>
-                {tag}
-              </p>
-            );
-          })}
         </div>
       </div>
     </Link>
