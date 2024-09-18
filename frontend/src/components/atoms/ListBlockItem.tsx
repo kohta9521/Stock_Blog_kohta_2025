@@ -6,20 +6,22 @@ import Link from "next/link";
 // style
 import styles from "./styles/ListBlockItem.module.scss";
 
+// icons
+import { IoIosMail } from "react-icons/io";
+
 // props
 export type ListBlockItemProps = {
   id: string;
   text: string;
-  icon: React.ReactNode;
   href: string;
 };
 
-export const ListBlockItem = ({ id, text, icon, href }: ListBlockItemProps) => {
+export const ListBlockItem = ({ id, text, href }: ListBlockItemProps) => {
   return (
     <div className={styles.listItem} key={id}>
       <Link className={styles.link} href={href}>
-        {icon}
-        <p className={styles.listText}>{text}</p>
+        <IoIosMail className={styles.icon} />
+        <p className={styles.text}>{text}</p>
       </Link>
     </div>
   );
