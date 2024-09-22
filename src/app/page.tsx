@@ -1,19 +1,16 @@
-// components
-import ListBlockItem from "@/components/atoms/ListBlockItem";
-import ListItem from "@/components/atoms/ListItem";
-import Header from "@/components/organisms/Header";
 import React from "react";
+
+// components
+import DefaultFlexLayout from "@/components/templates/DefaultFlexLayout";
 
 export default function Home() {
   return (
     <div>
-      <Header>
-        <ListItem id="about" text="ABOUT" href="/about" />
-        <ListItem id="blogList" text="BLOG LIST" href="/bloglist" />
-        <ListItem id="profile" text="PROFILE" href="/profile" />
-        <ListItem id="news" text="NEWS" href="/news" />
-        <ListBlockItem id="contact" text="CONTACT" href="/contact" />
-      </Header>
+      <DefaultFlexLayout
+        id="blog-page-layout"
+        leftChildren={<h1>sidebar</h1>}
+        rightChildren={<h1>main</h1>}
+      />
     </div>
   );
 }
