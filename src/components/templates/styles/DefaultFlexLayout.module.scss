@@ -1,0 +1,30 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .left {
+    width: 340px;
+    border: 1px solid red;
+  }
+  .right {
+    width: calc(100% - 340px);
+    border: 1px solid blue;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    .left {
+    }
+    .right {
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    .left {
+    }
+    .right {
+    }
+  }
+}
