@@ -25,4 +25,67 @@
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/Main.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Main_main__VomQQ {
+  width: 100%;
+  padding: 20px 40px;
+}
+.Main_main__VomQQ .Main_container__JlERq {
+  width: 100%;
+  border: 1px solid red;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/SideBar.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecTitle.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideSecTitle_box__Qi9kJ {
+  display: block;
+  width: 340px;
+  height: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+.SideSecTitle_box__Qi9kJ:hover .SideSecTitle_text__h6hf1 {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecTitle_box__Qi9kJ .SideSecTitle_text__h6hf1 {
+  font-size: var(--large);
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--main-white);
+}
+
+.SideSecTitle_selected__fLAWu {
+  color: var(--primary);
+  border-right: 5px solid var(--secondary);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecLink.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideSecLink_link__BQDi5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 340px;
+  height: 40px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+.SideSecLink_link__BQDi5:hover .SideSecLink_text__Y_5Dt {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecLink_link__BQDi5:hover .SideSecLink_icon__M4GKV {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecLink_link__BQDi5 .SideSecLink_text__Y_5Dt {
+  display: block;
+}
+.SideSecLink_link__BQDi5 .SideSecLink_icon__M4GKV {
+  display: block;
+}
