@@ -16,9 +16,6 @@ export default function Home() {
   return (
     <div>
       <Header>
-        <ListItem id="home" text="HOME" href="/" />
-        <ListItem id="about" text="ABOUT" href="/" />
-        <ListItem id="blog" text="BLOG" href="/" />
         <ListBlockItem id="contact" text="CONTACT" href="/" />
       </Header>
       <DefaultFlexLayout
