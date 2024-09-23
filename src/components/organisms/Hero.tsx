@@ -5,16 +5,11 @@ import styles from "./styles/Hero.module.scss";
 
 // components
 
-// props
-export type HeroProps = {
-  children: React.ReactNode;
-};
-
-const Hero = ({ children }: HeroProps) => {
+const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
-        <div className={styles.topBlogBox}>{children}</div>
+        <h1 className={styles.title}>Sample Title Here</h1>
       </div>
     </div>
   );
