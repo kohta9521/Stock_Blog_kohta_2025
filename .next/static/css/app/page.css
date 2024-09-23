@@ -37,10 +37,27 @@
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/SideBar.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 .SideBar_sidebar__iVLff {
   width: 100%;
   height: calc(100vh - 100px);
   padding: 20px 0px;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* スクロールバーのカスタマイズ */
+}
+.SideBar_sidebar__iVLff::-webkit-scrollbar {
+  width: 6px;
+}
+.SideBar_sidebar__iVLff::-webkit-scrollbar-track {
+  background: #000000; /* スクロールバーの背景色 */
+}
+.SideBar_sidebar__iVLff::-webkit-scrollbar-thumb {
+  background-color: #6f00ff; /* スクロールバーの色 */
+  border-radius: 3px; /* スクロールバーの角を丸める */
+}
+.SideBar_sidebar__iVLff::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* ホバー時のスクロールバーの色 */
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecTitle.module.scss ***!
@@ -207,4 +224,12 @@
   color: var(--main-white);
   line-height: 20px;
   font-size: 19px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/molecules/styles/SideBarSecBox.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideBarSecBox_box__vpumA {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 30px 0px;
 }
