@@ -1,0 +1,15 @@
+.sidebar {
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .sidebar {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+  }
+}

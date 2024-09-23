@@ -1,6 +1,6 @@
 .main {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
   .left {
     width: 340px;
@@ -23,8 +23,10 @@
 @media screen and (max-width: 768px) {
   .main {
     .left {
+      display: none;
     }
     .right {
+      width: 100%;
     }
   }
 }

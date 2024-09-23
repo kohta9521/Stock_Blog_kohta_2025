@@ -3,7 +3,7 @@
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .DefaultFlexLayout_main__g0KAn {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
 }
 .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_left__K8DhY {
@@ -13,4 +13,198 @@
 .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_right__iPrGb {
   width: calc(100% - 340px);
   border: 1px solid blue;
+}
+
+@media screen and (max-width: 768px) {
+  .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_left__K8DhY {
+    display: none;
+  }
+  .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_right__iPrGb {
+    width: 100%;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/Main.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Main_main__VomQQ {
+  width: 100%;
+  padding: 20px 40px;
+}
+.Main_main__VomQQ .Main_container__JlERq {
+  width: 100%;
+  border: 1px solid red;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/SideBar.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideBar_sidebar__iVLff {
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 20px 0px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecTitle.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideSecTitle_box__Qi9kJ {
+  display: block;
+  width: 340px;
+  height: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+}
+.SideSecTitle_box__Qi9kJ:hover .SideSecTitle_text__h6hf1 {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecTitle_box__Qi9kJ .SideSecTitle_text__h6hf1 {
+  font-size: var(--large);
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--main-white);
+}
+
+.SideSecTitle_selected__fLAWu {
+  color: var(--primary);
+  border-right: 5px solid var(--secondary);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecLink.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideSecLink_link__BQDi5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 340px;
+  height: 40px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+.SideSecLink_link__BQDi5:hover .SideSecLink_text__Y_5Dt {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecLink_link__BQDi5:hover .SideSecLink_icon__M4GKV {
+  color: var(--primary);
+  transition: all 0.3s;
+}
+.SideSecLink_link__BQDi5 .SideSecLink_text__Y_5Dt {
+  display: block;
+}
+.SideSecLink_link__BQDi5 .SideSecLink_icon__M4GKV {
+  display: block;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/Hero.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Hero_hero__l3NWG {
+  width: 100%;
+  height: auto;
+  padding: 80px 0px;
+}
+.Hero_hero__l3NWG .Hero_container__3ofzo {
+  width: 1000%;
+  max-width: 1280px;
+}
+.Hero_hero__l3NWG .Hero_container__3ofzo .Hero_topBlogBox__1tNLY {
+  width: 100%;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/Header.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header___q5Vl {
+  width: 100%;
+  height: 100px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header_header___q5Vl .Header_rightBox__0m0Pq {
+  display: flex;
+  align-items: center;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/Logo.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Logo_logoBox___Qb_l {
+  height: 100%;
+}
+.Logo_logoBox___Qb_l .Logo_link__EJkYi {
+  height: 100%;
+  text-decoration: none;
+}
+.Logo_logoBox___Qb_l .Logo_link__EJkYi .Logo_logo___1y5w {
+  display: block;
+  height: auto;
+}
+.Logo_logoBox___Qb_l .Logo_link__EJkYi .Logo_small__XU_DZ {
+  width: 150px;
+}
+.Logo_logoBox___Qb_l .Logo_link__EJkYi .Logo_medium__BuppP {
+  width: 250px;
+}
+.Logo_logoBox___Qb_l .Logo_link__EJkYi .Logo_large___wMKK {
+  width: 300px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/ListItem.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ListItem_listItemBox__LOJam {
+  margin-right: 40px;
+}
+.ListItem_listItemBox__LOJam .ListItem_link__8dVow {
+  text-decoration: none;
+}
+.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf {
+  position: relative;
+  display: inline-block;
+  font-size: var(--large);
+  font-weight: 600;
+  line-height: normal;
+  color: var(--main-white);
+  transition: color 0.3s ease-in-out;
+}
+.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-blue);
+  transition: width 0.3s ease-in-out;
+}
+.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf:hover {
+  color: var(--main-blue);
+}
+.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf:hover::after {
+  width: 100%;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/ListBlockItem.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ListBlockItem_listItem__AUV4q {
+  display: inline-block;
+  width: auto;
+  height: 60px;
+  border-radius: 30px;
+  padding: 18px 30px;
+  background-color: var(--main-blue);
+}
+.ListBlockItem_listItem__AUV4q .ListBlockItem_link__rCUYO {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.ListBlockItem_listItem__AUV4q .ListBlockItem_link__rCUYO .ListBlockItem_icon__FU7_4 {
+  width: 25px;
+  height: 25px;
+  color: var(--main-white);
+  margin-right: 5px;
+}
+.ListBlockItem_listItem__AUV4q .ListBlockItem_link__rCUYO .ListBlockItem_text__Lf834 {
+  color: var(--main-white);
+  line-height: 20px;
+  font-size: 19px;
 }
