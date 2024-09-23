@@ -4,11 +4,10 @@
   display: flex;
   .left {
     width: 340px;
-    border: 1px solid red;
+    border-right: 0.1px solid gray;
   }
   .right {
     width: calc(100% - 340px);
-    border: 1px solid blue;
   }
 }
 

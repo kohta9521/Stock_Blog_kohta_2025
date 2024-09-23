@@ -11,9 +11,9 @@ export type MainProps = {
   children: React.ReactNode;
 };
 
-const Main = ({ children }: MainProps) => {
+const Main = ({ id, children }: MainProps) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} key={id}>
       <div className={styles.container}>{children}</div>
     </div>
   );

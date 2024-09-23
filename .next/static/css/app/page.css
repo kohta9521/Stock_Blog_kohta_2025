@@ -8,11 +8,10 @@
 }
 .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_left__K8DhY {
   width: 340px;
-  border: 1px solid red;
+  border-right: 0.1px solid gray;
 }
 .DefaultFlexLayout_main__g0KAn .DefaultFlexLayout_right__iPrGb {
   width: calc(100% - 340px);
-  border: 1px solid blue;
 }
 
 @media screen and (max-width: 768px) {
@@ -32,7 +31,6 @@
 }
 .Main_main__VomQQ .Main_container__JlERq {
   width: 100%;
-  border: 1px solid red;
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/organisms/styles/SideBar.module.scss ***!
@@ -41,6 +39,8 @@
   width: 100%;
   height: calc(100vh - 100px);
   padding: 20px 0px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/SideSecTitle.module.scss ***!
@@ -100,7 +100,7 @@
 .Hero_hero__l3NWG {
   width: 100%;
   height: auto;
-  padding: 80px 0px;
+  padding: 30px 0px 80px 0pxs;
 }
 .Hero_hero__l3NWG .Hero_container__3ofzo {
   width: 1000%;
@@ -119,6 +119,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 0.1px solid gray;
 }
 .Header_header___q5Vl .Header_rightBox__0m0Pq {
   display: flex;
@@ -147,40 +148,6 @@
 .Logo_logoBox___Qb_l .Logo_link__EJkYi .Logo_large___wMKK {
   width: 300px;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/ListItem.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.ListItem_listItemBox__LOJam {
-  margin-right: 40px;
-}
-.ListItem_listItemBox__LOJam .ListItem_link__8dVow {
-  text-decoration: none;
-}
-.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf {
-  position: relative;
-  display: inline-block;
-  font-size: var(--large);
-  font-weight: 600;
-  line-height: normal;
-  color: var(--main-white);
-  transition: color 0.3s ease-in-out;
-}
-.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: var(--main-blue);
-  transition: width 0.3s ease-in-out;
-}
-.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf:hover {
-  color: var(--main-blue);
-}
-.ListItem_listItemBox__LOJam .ListItem_link__8dVow .ListItem_linkText__xOznf:hover::after {
-  width: 100%;
-}
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/atoms/styles/ListBlockItem.module.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -190,7 +157,7 @@
   height: 60px;
   border-radius: 30px;
   padding: 18px 30px;
-  background-color: var(--main-blue);
+  background-color: var(--primary);
 }
 .ListBlockItem_listItem__AUV4q .ListBlockItem_link__rCUYO {
   text-decoration: none;
@@ -207,4 +174,12 @@
   color: var(--main-white);
   line-height: 20px;
   font-size: 19px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/components/molecules/styles/SideBarSecBox.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SideBarSecBox_box__vpumA {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 30px 0px;
 }

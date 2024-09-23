@@ -3,6 +3,7 @@ node_modules
 
 # .next
 .next
+/.next
 
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
