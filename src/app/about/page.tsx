@@ -25,163 +25,183 @@ const About = () => {
         id="blog-page-layout"
         leftChildren={
           <SideBar id="topSideBard">
-            {/* about */}
+            {/* 概要 */}
             <SideBarSecBox id="about">
               <SideSecTitle
-                id="top"
-                text="TOP"
+                id="home"
+                text="HOME"
                 link="/"
                 onClick={() => {}}
                 isSelected={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
+                id="aboutThisSite"
                 href="/about"
-                text="About"
+                text="このサイトについて"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Concept"
+                id="thisSiteTechAndStack"
+                href="/site"
+                text="サイトの構成と技術スタック"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Service"
+                id="myServices"
+                href="/service"
+                text="提供しているサービス一覧"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Portfolio Site"
+                id="myPortFolioSite"
+                href="/portfolio"
+                text="ポートフォリオサイト"
+                changePage={true}
+              />
+              <SideSecLink
+                id="myOldTechBlog"
+                href="/oldBlog"
+                text="旧ブログサイト"
                 changePage={true}
               />
             </SideBarSecBox>
-            {/* sample */}
-            <SideBarSecBox id="sample">
+            {/* 技術関連 */}
+            <SideBarSecBox id="tech">
               <SideSecTitle
-                id="build"
-                text="Build & connect backend"
+                id="myTechStack"
+                text="Technology"
+                link="/mytechstack"
+                onClick={() => {}}
+                isSelected={true}
+              />
+              <SideSecLink
+                id="htmlcss"
+                href="/htmlcss"
+                text="HTML & CSS"
+                changePage={false}
+              />
+              <SideSecLink
+                id="tailwindcss"
+                href="/tailwindcss"
+                text="TailwindCSS"
+                changePage={false}
+              />
+              <SideSecLink
+                id="javascript"
+                href="/javascript"
+                text="JavaScript"
+                changePage={false}
+              />
+              <SideSecLink
+                id="typescript"
+                href="/typescirpt"
+                text="TypeScript"
+                changePage={false}
+              />
+              <SideSecLink
+                id="react"
+                href="/react"
+                text="React"
+                changePage={false}
+              />
+              <SideSecLink
+                id="nextjs"
+                href="/nextjs"
+                text="Next.js"
+                changePage={false}
+              />
+              <SideSecLink
+                id="eslintprettier"
+                href="/eslintprettier"
+                text="ESLint & Prettier"
+                changePage={false}
+              />
+              <SideSecLink
+                id="jest"
+                href="/test"
+                text="Test (Jest)"
+                changePage={false}
+              />
+              <SideSecLink
+                id="graphql"
+                href="/graphql"
+                text="GraphQL"
+                changePage={false}
+              />
+              <SideSecLink id="go" href="/go" text="Go" changePage={false} />
+              <SideSecLink id="aws" href="/aws" text="AWS" changePage={false} />
+            </SideBarSecBox>
+            {/* 株式投資 */}
+            <SideBarSecBox id="stock">
+              <SideSecTitle
+                id="stock"
+                text="株式投資関連"
                 link="/"
                 onClick={() => {}}
                 isSelected={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Authentication"
+                id="stocklesson"
+                href="/stocklesson"
+                text="株式投資入門"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="API (GraphQL)"
+                id="technical"
+                href="/technical"
+                text="テクニカル分析"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="API (REST)"
+                id="fundamental"
+                href="/fundamental"
+                text="ファンダメンタル分析"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Strorage"
-                changePage={false}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Functions"
-                changePage={false}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Server-Side Rendering"
-                changePage={false}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Existing resources"
-                changePage={false}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="utilties"
+                id="companyanalysis"
+                href="/companyanalisis"
+                text="会社分析"
                 changePage={false}
               />
             </SideBarSecBox>
-            {/* deploy */}
-            <SideBarSecBox id="host">
+            {/* 書籍 */}
+            <SideBarSecBox id="book">
               <SideSecTitle
-                id="build"
-                text="Deploy & host"
+                id="book"
+                text="書籍"
                 link="/"
                 onClick={() => {}}
                 isSelected={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Amplify hosting"
+                id="allbooks"
+                href="/allbooks"
+                text="書籍一覧"
                 changePage={false}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="deployment"
+                id="recommendbooks"
+                href="/recommendbooks"
+                text="おすすめ書籍"
                 changePage={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Custom configuration"
-                changePage={true}
-              />
-            </SideBarSecBox>
-            {/* sample */}
-            <SideBarSecBox id="sample2">
-              <SideSecTitle
-                id="build"
-                text="Git Hub"
-                link="/"
-                onClick={() => {}}
-                isSelected={true}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Amplify hosting"
-                changePage={false}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="deployment"
+                id="techbooks"
+                href="/techbooks"
+                text="技術関連"
                 changePage={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Custom configuration"
+                id="stockbooks"
+                href="/stockbooks"
+                text="株式投資関連"
                 changePage={true}
               />
               <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Custom configuration"
-                changePage={true}
-              />
-              <SideSecLink
-                id={"aboutpagelink"}
-                href="/about"
-                text="Custom configuration"
+                id="otherbooks"
+                href="/otherbooks"
+                text="その他"
                 changePage={true}
               />
             </SideBarSecBox>
