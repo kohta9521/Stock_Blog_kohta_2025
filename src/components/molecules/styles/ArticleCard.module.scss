@@ -1,0 +1,27 @@
+.card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  .title {
+  }
+  .desc {
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    .title {
+    }
+    .desc {
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    .title {
+    }
+    .desc {
+    }
+  }
+}
