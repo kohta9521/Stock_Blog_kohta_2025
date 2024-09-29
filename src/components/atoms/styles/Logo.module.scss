@@ -1,18 +1,35 @@
 .logoLink {
+  display: block;
+  text-decoration: none;
+  width: 140px;
+  height: 80px;
+  &:hover .logoText {
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+  }
   .logoText {
+    font-size: var(--xlarge);
+    font-weight: 600;
+    line-height: 80px;
   }
 }
 
 @media screen and (max-width: 1280px) {
   .logoLink {
+    height: 70px;
     .logoText {
+      font-size: var(--large);
+      line-height: 70px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .logoLink {
+    height: 60px;
     .logoText {
+      font-size: var(--default);
+      line-height: 60px;
     }
   }
 }
