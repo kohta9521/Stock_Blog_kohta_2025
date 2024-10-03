@@ -1,0 +1,44 @@
+.box {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid var(--main-white);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: var(--primary);
+    transition: all 0.3s ease-in;
+  }
+  .icon {
+    width: 23px;
+    height: 23px;
+    margin-right: 7px;
+  }
+  .text {
+    font-size: var(--large);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .box {
+    padding: 8px 17px;
+    .icon {
+    }
+    .text {
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 5px 15px;
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+    .text {
+      font-size: var(--medium);
+    }
+  }
+}
