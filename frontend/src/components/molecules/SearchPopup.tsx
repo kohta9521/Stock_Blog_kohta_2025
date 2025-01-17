@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // icons
@@ -31,6 +32,21 @@ const SearchPopup = ({ id, closePopup }: SearchPopupProps) => {
             <IoClose size={30} />
           </button>
           <h1 className="text-2xl font-semibold mb-3">記事検索</h1>
+          <input
+            type="text"
+            placeholder="検索ワード"
+            className="w-full mb-20 py-2 px-2 border-2 rounded-md border-gray-200"
+          />
+          <p className="block text-center mb-8">
+            検索ワードを入力してください。
+          </p>
+          <Image
+            className="w-56 mx-auto mb-12"
+            src="/images/common/search.svg"
+            width={300}
+            height={500}
+            alt="search"
+          />
         </div>
       </div>
     </>

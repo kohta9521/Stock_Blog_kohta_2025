@@ -21,7 +21,7 @@ const SearchBtn = ({ id }: SearchBtnProps) => {
       <div
         key={id}
         onClick={openPopup}
-        className="flex items-center mr-6 cursor-pointer p-3 bg-red-500 text-white  rounded-2xl"
+        className="flex items-center mr-6 cursor-pointer p-3 bg-red-500 text-white  rounded-2xl md:hidden sm:hidden"
       >
         <FaSearch color="white" size={17} />
         <p className="font-semibold leading-10 cursor-pointer ml-2 text-white">
