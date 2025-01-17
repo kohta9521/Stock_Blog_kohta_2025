@@ -11,10 +11,10 @@ import SearchBtn from "../molecules/SearchBtn";
 
 const Header = () => {
   return (
-    <div className="w-full h-20 py-5">
-      <div className="flex justify-between w-11/12 max-w-screen-2xl h-10 mx-auto ">
+    <div className="w-full h-14 py-4 md:h-20 md:py-5">
+      <div className="flex justify-between w-11/12 md:max-w-screen-2xl h-10 mx-auto ">
         <Logo id="home-header" link="/" size="large" color="primary" />
-        <div className="flex justify-between h-10">
+        <div className="hidden md:flex md:justify-between md:h-10">
           <HeaderList
             id="home-header-about"
             link="/about"
