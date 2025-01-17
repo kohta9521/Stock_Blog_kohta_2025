@@ -10,7 +10,7 @@ const Articles = () => {
       id="articles"
       linkArr={[{ link: "/articles", text: "ブログ一覧" }]}
       title="ブログ一覧"
-      desc="kohtaの提供するブログ記事一覧です。"
+      desc="kohtaの提供するブログ記事一覧です。キーワード検索・日付絞り込み検索などが可能です。"
     >
       {/* 一覧テンプレを作成 */}
       <ArticlePage id="article-page">
