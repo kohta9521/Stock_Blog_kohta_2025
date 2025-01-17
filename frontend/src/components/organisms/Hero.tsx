@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       {/* top contents */}
       <div className="absolute inset-x-0  flex justify-center">
-        <div className="w-10/12 max-w-[90%]">
+        <div className="w-11/12 max-w-[90%]">
           <TopArticleCard
             id="home-top-article"
             link="/"
