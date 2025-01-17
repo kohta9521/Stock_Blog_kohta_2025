@@ -28,7 +28,7 @@ const ArticleCard = ({
     <Link
       key={id}
       href={link}
-      className="block group w-full mb-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white rounded-lg sm:w-64"
+      className="block group w-full mb-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white rounded-lg sm:w-64 sm:max-h-96"
     >
       <Image
         src={image}
@@ -38,14 +38,14 @@ const ArticleCard = ({
         className="w-full h-52 object-cover sm:h-36"
       />
       {/* Content */}
-      <div className="w-full p-4 sm:pt-4 sm:px-4 sm:pb-4">
+      <div className="w-full p-4 sm:pt-4 sm:px-4 sm:pb-4 ">
         <div className="flex justify-between items-center mb-3 text-sm text-gray-500 sm:text-sm">
           <p className="bg-red-600 text-white px-2 py-1.5 rounded-xl text-xs font-semibold">
             {category}
           </p>
           <p className="font-semibold text-s">{date}</p>
         </div>
-        <h2 className="block w-full text-lg font-semibold text-gray-800 mb-3 line-clamp-2 transition-all duration-300 group-hover:text-gray-400 sm:text-base sm:break-words sm:mb-8">
+        <h2 className="block w-full text-lg font-semibold text-gray-800 mb-3 line-clamp-2 transition-all duration-300 group-hover:text-gray-400 sm:text-base sm:break-words sm:mb-7">
           {title}
         </h2>
         <div className="flex flex-wrap gap-3">
