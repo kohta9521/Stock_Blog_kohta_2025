@@ -8,10 +8,7 @@ export type SidebarTitleProps = {
 
 const SidebarTitle = ({ id, title }: SidebarTitleProps) => {
   return (
-    <p
-      key={id}
-      className="block w-full mb-5 font-semibold text-base text-black"
-    >
+    <p key={id} className="block w-full mb-5 font-semibold text-lg text-black">
       {title}
     </p>
   );
