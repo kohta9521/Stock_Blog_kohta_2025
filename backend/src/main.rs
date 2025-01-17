@@ -1,17 +1,17 @@
-use axum::{routing::get, Router};
-use hyper::Server;  // hyper::Serverをインポート
-
-use std::net::SocketAddr;
+use axum::{Router};
+use crate::config::app_config::AppConfig;
+use crate::routes;
 
 #[tokio::main]
 async fn main() {
-    // ルーターを定義
-    let app = Router::new().route("/", get(|| async { "Hello, World!" }));
+    // 設定を読み込む
+    let config = AppConfig::new();
+
+    // ルーターを構築
+    let app =routes::create_routes();
 
     // サーバーを起動
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
-    println!("Listening on http://{}", addr);
-    Server::bind(&addr)  // hyper::Serverを使用
+    axum::Server::bind(&config.server_addr)
         .serve(app.into_make_service())
         .await
         .unwrap();
