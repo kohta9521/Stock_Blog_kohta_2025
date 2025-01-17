@@ -35,6 +35,9 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+        <Link href="/management">
+          <p>個人情報の取り扱いについて</p>
+        </Link>
       </div>
     </div>
   );

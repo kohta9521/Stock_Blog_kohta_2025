@@ -22,6 +22,12 @@ const Header = () => {
             size="medium"
           />
           <HeaderList
+            id="home-header-articles"
+            link="/articles"
+            text="Articles"
+            size="medium"
+          />
+          <HeaderList
             id="home-header-portfolio"
             link="https://www.kohta-engineer.com/"
             text="Portfolio Site"
