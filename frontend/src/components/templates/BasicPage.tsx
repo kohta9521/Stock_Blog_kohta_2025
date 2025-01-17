@@ -24,7 +24,7 @@ const BasicPage = ({ id, linkArr, title, desc, children }: BasicPageProps) => {
     <div key={id} className="w-full h-auto">
       <Header />
       {/* Hero */}
-      <div className="w-11/12 mx-auto mt-20  mb-12 sm:mt-5">
+      <div className="w-11/12 mx-auto mt-20  mb-12 sm:mt-5  sm:max-w-screen-xl sm:mx-auto">
         {/* Link Array */}
         <div className="hidden sm:flex sm:items-center sm:gap-3 sm:mb-20">
           <Link href="/">
@@ -45,7 +45,7 @@ const BasicPage = ({ id, linkArr, title, desc, children }: BasicPageProps) => {
         <p className="font-medium text-medium text-left sm:text-left">{desc}</p>
       </div>
       {/* Main (children) */}
-      <div className="w-11/12 mx-auto">{children}</div>
+      <div className="w-11/12 mx-auto  sm:max-w-screen-xl">{children}</div>
       <Footer />
     </div>
   );

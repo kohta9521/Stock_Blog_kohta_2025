@@ -31,7 +31,7 @@ const SidebarArticleCard = ({
         </p>
         <p className="block font-medium text-sm text-gray-500">{date}</p>
       </div>
-      <h3 className="block w-full text-sm font-semibold text-gray-800 mb-2 line-clamp-2 transition-all duration-300 group-hover:text-gray-400 sm:text-base sm:break-words sm:mb-3">
+      <h3 className="block w-full text-sm font-medium text-gray-800 mb-2 line-clamp-2 transition-all duration-300 group-hover:text-gray-400 sm:text-base sm:break-words sm:mb-3">
         {title}
       </h3>
     </Link>

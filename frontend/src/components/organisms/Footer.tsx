@@ -12,7 +12,7 @@ import { snsData } from "@/data/snsData";
 
 const Footer = () => {
   return (
-    <div className="w-full py-3">
+    <div className="w-full py-3n ">
       <div className="w-11/12 mx-auto pt-20 sm:pt-5">
         <Logo id="footer-logo" link="/" size="large" color="secondary" />
         {/* SNS */}

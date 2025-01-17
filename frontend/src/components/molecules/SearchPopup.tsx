@@ -24,10 +24,10 @@ const SearchPopup = ({ id, closePopup }: SearchPopupProps) => {
         ></div>
 
         {/* ポップアップ内容 */}
-        <div className="relative z-10 bg-white w-6/12 min-h-96 p-6 rounded-md shadow-lg">
+        <div className="relative z-10 bg-white w-6/12 min-h-96 p-9 rounded-md shadow-lg">
           <button
             onClick={closePopup}
-            className="absolute top-5 right-5 text-gray-500 hover:text-gray-800"
+            className="absolute top-10 right-9 text-gray-500 hover:text-red-600"
           >
             <IoClose size={30} />
           </button>
@@ -35,7 +35,7 @@ const SearchPopup = ({ id, closePopup }: SearchPopupProps) => {
           <input
             type="text"
             placeholder="検索ワード"
-            className="w-full mb-20 py-2 px-2 border-2 rounded-md border-gray-200"
+            className="w-full mb-20 py-4 px-4 border-2 rounded-md border-gray-200"
           />
           <p className="block text-center mb-8">
             検索ワードを入力してください。
