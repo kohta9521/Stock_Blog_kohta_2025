@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import BasicPage from "@/components/templates/BasicPage";
+import ArticlePage from "@/components/templates/ArticlePage";
 
 const Articles = () => {
   return (
@@ -12,10 +13,9 @@ const Articles = () => {
       desc="kohtaの提供するブログ記事一覧です。"
     >
       {/* 一覧テンプレを作成 */}
-      <div>
-        <h1>ここに一覧を表示</h1>
-        <p>ページネーションを作成する</p>
-      </div>
+      <ArticlePage id="article-page">
+        <h1>halle</h1>
+      </ArticlePage>
     </BasicPage>
   );
 };

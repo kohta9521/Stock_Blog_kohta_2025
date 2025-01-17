@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-64 bg-red-600">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-black pt-14 mb-3 sm:text-4xl">
+        <h1 className="text-3xl font-bold text-black pt-14 mb-3 sm:text-6xl">
           Kohta <span className="text-white">Stack</span> Blog
         </h1>
         <p className="text-white text-sm font-semibold sm:text-base sm:font-bold mb-[25px]">
@@ -24,8 +24,8 @@ const Hero = () => {
             link="/"
             image="/images/common/sample-article.jpeg"
             genre="株式投資"
-            date="2021/08/01"
-            title="株価が上がる理由とロジックとは？"
+            date="2025.1.15"
+            title="2024年のトレードの振り返りと2025年の目標"
             tags={["株式", "投資", "株価"]}
           />
         </div>
