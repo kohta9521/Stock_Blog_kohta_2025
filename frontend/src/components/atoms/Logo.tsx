@@ -16,7 +16,7 @@ export type LogoProps = {
 
 const Logo = ({ id, link, size = "medium", color = "primary" }: LogoProps) => {
   return (
-    <Link key={id} href={link} className="">
+    <Link key={id} href={link} className="h-5">
       <p
         className={clsx(
           {
