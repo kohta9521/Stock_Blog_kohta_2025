@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <div className="w-11/12 mx-auto mt-72 sm:mt-52 sm:flex sm:justify-around sm:max-w-screen-2xl">
       {/* Article Area */}
-      <div className="  w-full mb-20 sm:w-9/12  sm:pb-10">
+      <div className="w-full mb-20 sm:w-9/12  sm:pb-10">
         <div className="w-full mb-10  sm:w-full sm:flex sm:flex-wrap sm:justify-between sm:gap-2 sm:mb-10">
           <ArticleCard
             id="home-article-1"

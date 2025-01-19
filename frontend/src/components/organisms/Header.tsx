@@ -8,11 +8,12 @@ import Logo from "../atoms/Logo";
 import HeaderList from "../atoms/HeaderList";
 import HeaderBoxList from "../atoms/HeaderBoxList";
 import SearchBtn from "../molecules/SearchBtn";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
   return (
-    <div className="w-full h-14 py-4 md:h-20 md:py-5">
-      <div className="flex justify-between w-11/12 md:max-w-screen-2xl h-10 mx-auto ">
+    <div className="w-full h-16 py-3.5 md:h-20 md:py-5">
+      <div className="flex justify-between w-11/12 h-14 mx-auto md:max-w-screen-2xl">
         <Logo id="home-header" link="/" size="large" color="primary" />
         <div className="hidden md:flex md:justify-between md:h-10">
           <HeaderList
@@ -41,6 +42,10 @@ const Header = () => {
             text="Contact"
             size="medium"
           />
+        </div>
+        {/* スマホ版のハンバーガーメニュー */}
+        <div className="block md:hidden">
+          <Hamburger />
         </div>
       </div>
     </div>
