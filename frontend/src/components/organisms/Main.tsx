@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 
 // next
 import Link from "next/link";
+
+// hooks
+import useGetAllBlogs from "@/hooks/useGetAllBlogs";
 
 // components
 import SidebarTitle from "../atoms/SidebarTitle";
@@ -11,104 +15,30 @@ import CategoryItem from "../atoms/CategoryItem";
 import TagItem from "../atoms/TagItem";
 
 const Main = () => {
+  // ブログ一覧を取得
+  const blogs = useGetAllBlogs();
+
   return (
     <div className="w-11/12 mx-auto mt-72 sm:mt-52 sm:flex sm:justify-around sm:max-w-screen-2xl">
       {/* Article Area */}
       <div className="w-full mb-20 sm:w-9/12  sm:pb-10">
         <div className="w-full mb-10  sm:w-full sm:flex sm:flex-wrap sm:justify-between sm:gap-2 sm:mb-10">
           <p className="block w-full max-x-auto text-red-500 font-semibold mb-2 sm:text-lg">
-            - 最新記事 (10件) -
+            - 最新記事 -
           </p>
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="株価が上がる理由とロジックとは？"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="New"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="2024年のトレードの振り返り"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Popular"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021.08.01"
-            title="下げに耐え忍ぶ"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="None"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="資産運用を見直し、ポートフォリオを組み替えました"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="ホンダ技研工業(7267)についての考察"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="株価が上がる理由とロジックとは？"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021.08.01"
-            title="2024/1/4 大引けの大損"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="株価が上がる理由とロジックとは？"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021.08.01"
-            title="1/18 日経平均はとりあえず反発"
-            tags={["株式", "投資", "株価"]}
-          />
+          {blogs.slice(0, 8).map((blog) => (
+            <ArticleCard
+              key={blog.id}
+              id={blog.id}
+              link={`/articles/${blog.id}`}
+              imageInsideTag={blog.imageInsideTag}
+              image={blog.image.url}
+              category={blog.category.name}
+              date={blog.date}
+              title={blog.title}
+              tags={blog.tags.map((tag) => tag.sample)}
+            />
+          ))}
         </div>
         <Link
           className="block text-center w-64 h-16 mx-auto py-3 bg-red-600 rounded-full group transition-all duration-300 hover:bg-red-400"

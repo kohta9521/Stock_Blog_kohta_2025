@@ -6,7 +6,7 @@ import clsx from "clsx";
 // props
 export type ArticleInsideTagProps = {
   id: string;
-  type: "Pickup" | "New" | "Popular" | "None";
+  type: string;
 };
 
 const ArticleInsideTag = ({ id, type }: ArticleInsideTagProps) => {

@@ -3,13 +3,19 @@ import React from "react";
 // next
 import Link from "next/link";
 import Image from "next/image";
+
+// utils
+import { formatDate } from "@/utils/formatDate";
+
+// components
 import ArticleInsideTag from "../atoms/ArticleInsideTag";
 
 // props
 export type ArticleCardProps = {
   id: string;
   link: string;
-  imageInsideTag: "Pickup" | "New" | "Popular" | "None";
+  // imageInsideTag: "Pickup" | "New" | "Popular" | "None";
+  imageInsideTag: string;
   image: string;
   category: string;
   date: string;
@@ -47,7 +53,7 @@ const ArticleCard = ({
           <p className="bg-red-600 text-white px-2 py-1.5 rounded-xl text-xs font-semibold">
             {category}
           </p>
-          <p className="font-semibold text-s">{date}</p>
+          <p className="font-semibold text-s">{formatDate(date)}</p>
         </div>
         <h2 className="block w-full text-lg font-semibold text-gray-800 mb-3 line-clamp-2 transition-all duration-300 group-hover:text-gray-400 sm:text-base sm:break-words sm:mb-7">
           {title}
