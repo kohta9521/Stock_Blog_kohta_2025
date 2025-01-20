@@ -121,6 +121,10 @@ const Footer = () => {
           />
         </div>
       </div>
+      {/* copyright */}
+      <p className="text-center text-xs text-gray-500 mb-2">
+        © 2025 Kohta Stock Blog.
+      </p>
     </div>
   );
 };

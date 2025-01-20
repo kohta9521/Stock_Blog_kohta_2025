@@ -3,11 +3,13 @@ import React from "react";
 // next
 import Link from "next/link";
 import Image from "next/image";
+import ArticleInsideTag from "../atoms/ArticleInsideTag";
 
 // props
 export type ArticleCardProps = {
   id: string;
   link: string;
+  imageInsideTag: "Pickup" | "New" | "Popular" | "None";
   image: string;
   category: string;
   date: string;
@@ -18,6 +20,7 @@ export type ArticleCardProps = {
 const ArticleCard = ({
   id,
   link,
+  imageInsideTag,
   image,
   category,
   date,
@@ -28,8 +31,9 @@ const ArticleCard = ({
     <Link
       key={id}
       href={link}
-      className="block group w-full mb-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white rounded-lg sm:w-64 sm:max-h-96"
+      className="relative block group w-full mb-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white rounded-lg sm:w-64 sm:max-h-96"
     >
+      <ArticleInsideTag id={title} type={imageInsideTag} />
       <Image
         src={image}
         width={500}
