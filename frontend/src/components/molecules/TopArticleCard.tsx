@@ -4,6 +4,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// utils
+import { formatDate } from "@/utils/formatDate";
+
 // components
 import ArticleInsideTag from "../atoms/ArticleInsideTag";
 
@@ -50,7 +53,7 @@ const TopArticleCard = ({
           <p className="bg-red-600 text-white px-2 py-1.5 rounded-xl text-xs font-semibold">
             {genre}
           </p>
-          <p className="font-semibold text-s">{date}</p>
+          <p className="font-semibold text-s">{formatDate(date)}</p>
         </div>
         <h2 className="block w-full text-lg font-semibold text-gray-800 mb-3 line-clamp-2 truncate overflow-hidden sm:mb-16">
           {title}
