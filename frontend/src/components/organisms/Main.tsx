@@ -19,6 +19,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -28,6 +29,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="New"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -37,6 +39,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Popular"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021.08.01"
@@ -46,6 +49,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="None"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -55,6 +59,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -64,6 +69,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -73,6 +79,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021.08.01"
@@ -82,6 +89,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -91,6 +99,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021.08.01"
@@ -100,6 +109,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
@@ -109,6 +119,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021.08.01"
@@ -118,6 +129,7 @@ const Main = () => {
           <ArticleCard
             id="home-article-1"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             category="株式投資"
             date="2021/08/01"
