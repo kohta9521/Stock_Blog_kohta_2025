@@ -22,7 +22,7 @@ const Main = () => {
     <div className="w-11/12 mx-auto mt-72 sm:mt-52 sm:flex sm:justify-around sm:max-w-screen-2xl">
       {/* Article Area */}
       <div className="w-full mb-20 sm:w-9/12  sm:pb-10">
-        <div className="w-full mb-10  sm:w-full sm:flex sm:flex-wrap sm:justify-between sm:gap-2 sm:mb-10">
+        <div className="w-full mb-10  sm:w-full sm:flex sm:flex-wrap sm:justify-between sm:gap-1 sm:mb-10">
           <p className="block w-full max-x-auto text-red-500 font-semibold mb-2 sm:text-lg">
             - 最新記事 -
           </p>
@@ -48,6 +48,16 @@ const Main = () => {
             記事一覧
           </p>
         </Link>
+        {/* セクションで分けた記事を表示しても良いかも？ */}
+        {/* <p className="block w-full max-x-auto text-red-500 font-semibold mt-20 mb-2 sm:text-lg">
+          - デイトレ関連 -
+        </p>
+        <p className="block w-full max-x-auto text-red-500 font-semibold mt-20 mb-2 sm:text-lg">
+          - 市場分析・企業研究 -
+        </p>
+        <p className="block w-full max-x-auto text-red-500 font-semibold mt-20 mb-2 sm:text-lg">
+          - 書籍 -
+        </p> */}
       </div>
       {/* Sidebar Area */}
       <div className="w-full mb-20 sm:w-1/5 sm:pt-6">
