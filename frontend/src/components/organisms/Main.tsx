@@ -16,6 +16,9 @@ const Main = () => {
       {/* Article Area */}
       <div className="w-full mb-20 sm:w-9/12  sm:pb-10">
         <div className="w-full mb-10  sm:w-full sm:flex sm:flex-wrap sm:justify-between sm:gap-2 sm:mb-10">
+          <p className="block w-full max-x-auto text-red-500 font-semibold mb-2 sm:text-lg">
+            - 最新記事 (10件) -
+          </p>
           <ArticleCard
             id="home-article-1"
             link="/"
@@ -104,36 +107,6 @@ const Main = () => {
             category="株式投資"
             date="2021.08.01"
             title="1/18 日経平均はとりあえず反発"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="マネーフォワードの株価急落理由は？今後の株価推移を予想！"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021.08.01"
-            title="昨日は久々の利益+20万円"
-            tags={["株式", "投資", "株価"]}
-          />
-          <ArticleCard
-            id="home-article-1"
-            link="/"
-            imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            category="株式投資"
-            date="2021/08/01"
-            title="日本市場貧弱すぎるww"
             tags={["株式", "投資", "株価"]}
           />
         </div>

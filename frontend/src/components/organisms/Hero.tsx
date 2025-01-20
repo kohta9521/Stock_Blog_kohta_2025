@@ -1,11 +1,11 @@
 import React from "react";
-import TopArticleCard from "../molecules/TopArticleCard";
 
 // components
+import TopArticleCard from "../molecules/TopArticleCard";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-64 bg-red-600">
+    <div className="relative w-full h-72 bg-red-600 sm:h-64">
       <div className="text-center">
         <h1 className="text-3xl font-bold text-black pt-14 mb-3 sm:text-6xl">
           Kohta <span className="text-white">Stack</span> Blog
@@ -17,11 +17,15 @@ const Hero = () => {
         </p>
       </div>
       {/* top contents */}
-      <div className="absolute inset-x-0  flex justify-center">
+      <div className="absolute inset-x-0 flex justify-center">
         <div className="w-11/12 max-w-[90%]">
+          <p className="block w-full  text-white font-semibold mb-2 sm:hidden">
+            - おすすめ記事 -
+          </p>
           <TopArticleCard
             id="home-top-article"
             link="/"
+            imageInsideTag="Pickup"
             image="/images/common/sample-article.jpeg"
             genre="株式投資"
             date="2025.1.15"
