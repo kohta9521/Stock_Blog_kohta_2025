@@ -34,7 +34,10 @@ const ArticleDetail = () => {
       date={blog.date}
       title={blog.title}
     >
-      <div dangerouslySetInnerHTML={{ __html: blog.body }} />
+      <div
+        className="w-full prose mb-32 lg:prose-lg max-w-none sm:mb-40"
+        dangerouslySetInnerHTML={{ __html: blog.body }}
+      />
       <ScrollTopButton />
     </ArticleDetailPage>
   );

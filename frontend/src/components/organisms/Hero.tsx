@@ -1,9 +1,21 @@
+"use client";
 import React from "react";
+
+// hooks
+import { useGetBlogById } from "@/hooks/useGetBlogById";
 
 // components
 import TopArticleCard from "../molecules/TopArticleCard";
+import Loading from "../atoms/Loading";
 
 const Hero = () => {
+  const { blog, error } = useGetBlogById("loy3m7mm2");
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
+  if (!blog) {
+    return <Loading />;
+  }
   return (
     <div className="relative w-full h-72 bg-red-600 sm:h-64">
       <div className="text-center">
@@ -23,13 +35,13 @@ const Hero = () => {
             - おすすめ記事 -
           </p>
           <TopArticleCard
-            id="home-top-article"
-            link="/"
+            id={blog.id}
+            link={`/articles/${blog.id}`}
             imageInsideTag="Pickup"
-            image="/images/common/sample-article.jpeg"
-            genre="株式投資"
-            date="2025.1.15"
-            title="2024年のトレードの振り返りと2025年の目標"
+            image={blog.image.url}
+            genre={blog.category.name}
+            date={blog.date}
+            title={blog.title}
             tags={["株式", "投資", "株価"]}
           />
         </div>
