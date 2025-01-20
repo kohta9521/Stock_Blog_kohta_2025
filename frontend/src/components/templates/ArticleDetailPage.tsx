@@ -66,14 +66,14 @@ const ArticleDetailPage = ({
                 height={300}
                 alt="articleImage"
               />
-              <div className="flex justify-between py-8">
+              <div className="flex justify-between py-8 sm:mb-6">
                 <p className="bg-red-600 text-white px-2 py-1.5 rounded-xl text-xs font-semibold">
                   {category}
                 </p>
                 <p className="">{formatDate(date)}</p>
               </div>
             </div>
-            <h1 className="mb-14 text-xl font-semibold sm:text-3xl">{title}</h1>
+            <h1 className="mb-20 text-xl font-semibold sm:text-4xl">{title}</h1>
             <div className="w-full">{children}</div>
           </div>
           {/* sidebar */}
