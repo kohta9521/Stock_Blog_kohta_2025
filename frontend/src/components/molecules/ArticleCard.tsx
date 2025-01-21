@@ -40,13 +40,16 @@ const ArticleCard = ({
       className="relative block group w-full mb-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white rounded-lg sm:w-64 sm:max-h-96"
     >
       <ArticleInsideTag id={title} type={imageInsideTag} />
-      <Image
-        src={image}
-        width={500}
-        height={350}
-        alt="articleImage"
-        className="w-full h-52 object-cover sm:h-36"
-      />
+      <div className="overflow-hidden">
+        <Image
+          src={image}
+          width={500}
+          height={350}
+          alt="articleImage"
+          className="w-full h-52 object-cover sm:h-36 transition-transform duration-300 group-hover:scale-110"
+        />
+      </div>
+
       {/* Content */}
       <div className="w-full p-4 sm:pt-4 sm:px-4 sm:pb-4 ">
         <div className="flex justify-between items-center mb-3 text-sm text-gray-500 sm:text-sm">

@@ -44,7 +44,7 @@ const TopArticleCard = ({
         width={400}
         height={200}
         alt="top-article"
-        className="w-full h-52 object-cover"
+        className="w-full h-52 object-cover "
       />
 
       {/* Content */}
