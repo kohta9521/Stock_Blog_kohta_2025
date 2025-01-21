@@ -17,7 +17,11 @@ const Contact = () => {
         お問い合わせフォームを設置しております。お気軽にお問い合わせください。お問い合わせいただいた内容は担当のものが3営業日以内に返信をいたします。またお問い合わせ時に入力いただいたメールアドレス宛にお問い合わせ完了メールが送信されますのでそちらもご確認お願いいたします。
       </p>
       {/* 後に切り離す */}
-      <form action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT} method="post">
+      <form
+        className="w-full h-auto"
+        action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT}
+        method="post"
+      >
         <label htmlFor="name">
           お名前<span>*</span>
         </label>
