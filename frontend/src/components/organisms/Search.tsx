@@ -1,6 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
+// icon
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
+
 const Search = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -16,12 +20,20 @@ const Search = () => {
         className="w-full px-3 py-3 mb-3 border-2 border-gray-300 rounded-xl"
       />
       {isModalVisible ? (
-        <button className="" onClick={closeModal}>
-          ↑
+        <button
+          className="flex items-center mb-3 text-base font-semibold duration transition-all hover:text-red-500"
+          onClick={closeModal}
+        >
+          詳細検索を閉じる
+          <IoMdArrowDropup size={30} />
         </button>
       ) : (
-        <button className="" onClick={openModal}>
-          ↓
+        <button
+          className="flex items-center mb-3 text-base font-semibold duration transition-all hover:text-red-500"
+          onClick={openModal}
+        >
+          日時・タグ・カテゴリーで検索する
+          <IoMdArrowDropdown size={30} />
         </button>
       )}
 

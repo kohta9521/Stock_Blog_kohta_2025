@@ -6,6 +6,8 @@ import Link from "next/link";
 
 // hooks
 import useGetAllBlogs from "@/hooks/useGetAllBlogs";
+import useGetAllCategories from "@/hooks/useGetAllCategories";
+import useGetAllTags from "@/hooks/useGetAllTags";
 
 // components
 import SidebarTitle from "../atoms/SidebarTitle";
@@ -17,6 +19,10 @@ import TagItem from "../atoms/TagItem";
 const Main = () => {
   // ブログ一覧を取得
   const blogs = useGetAllBlogs();
+  // カテゴリー一覧を取得
+  const categories = useGetAllCategories();
+  // タグ一覧を取得
+  const tags = useGetAllTags();
 
   return (
     <div className="w-11/12 mx-auto mt-72 sm:mt-52 sm:flex sm:justify-around sm:max-w-screen-2xl">
@@ -61,47 +67,31 @@ const Main = () => {
       </div>
       {/* Sidebar Area */}
       <div className="w-full mb-20 sm:w-1/5 sm:pt-6">
+        {/* title */}
         <SidebarTitle id="category" title="カテゴリー" />
+        {/* item */}
         <CategoryItem id="category-item-1" link="/" text="全て" number="120" />
-        <CategoryItem
-          id="category-item-2"
-          link="/"
-          text="株式投資"
-          number="120"
-        />
-        <CategoryItem
-          id="category-item-3"
-          link="/"
-          text="デイトレ"
-          number="120"
-        />
-        <CategoryItem
-          id="category-item-4"
-          link="/"
-          text="チャート"
-          number="120"
-        />
-        <CategoryItem
-          id="category-item-5"
-          link="/"
-          text="テクニカル"
-          number="120"
-        />
-        <CategoryItem
-          id="category-item-6"
-          link="/"
-          text="ファンダメンタル"
-          number="120"
-        />
-        <CategoryItem
-          id="category-item-7"
-          link="/"
-          text="信用取引"
-          number="120"
-        />
+        {categories.map((category) => (
+          <CategoryItem
+            key={category.id}
+            id={category.id}
+            link={`/categories/${category.id}`}
+            text={category.name}
+            number={category.id.length.toString()}
+          />
+        ))}
+        {/* title */}
         <SidebarTitle id="tag" title="タグ" />
         <div className="w-full h-auto flex flex-wrap gap-2 ">
-          <TagItem id="tag-item-1" link="/" text="株式" />
+          {tags.map((tag) => (
+            <TagItem
+              key={tag.id}
+              id={tag.id}
+              link={`/tags/${tag.id}`}
+              text={tag.text}
+            />
+          ))}
+          {/* <TagItem id="tag-item-1" link="/" text="株式" />
           <TagItem id="tag-item-2" link="/" text="株主優待" />
           <TagItem id="tag-item-3" link="/" text="投資" />
           <TagItem id="tag-item-4" link="/" text="米国株" />
@@ -114,7 +104,7 @@ const Main = () => {
           <TagItem id="tag-item-11" link="/" text="高配当株" />
           <TagItem id="tag-item-12" link="/" text="IPO" />
           <TagItem id="tag-item-13" link="/" text="株式市場" />
-          <TagItem id="tag-item-14" link="/" text="オルカン" />
+          <TagItem id="tag-item-14" link="/" text="オルカン" /> */}
         </div>
         <SidebarTitle id="popularArticles" title="人気の記事" />
         <SidebarArticleCard

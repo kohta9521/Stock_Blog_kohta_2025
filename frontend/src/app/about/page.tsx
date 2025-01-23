@@ -18,13 +18,9 @@ const About = () => {
       </p>
       <SubPageTitle id="about-title-2" title="このサイトを作った理由" />
       <p className="mb-10 text-base lending-relaxed sm:leading-loose">
-        このサイトを作成するに至った理由は2025年のとある目標があります。
+        このサイトは、自分が興味を持っていることや、学んだことを発信するために作成しました。
         <br />
-        <span className="text-red-500">
-          その目標とは「投資をしっかりと2025年は始める」です。
-        </span>
-        <br />
-        昨今インターネット上で投資をするといい・資産の分散をするといいといった情報が溢れていますが
+        具体的には株式や税金などのことに着目して記事を掲載していく予定です。
       </p>
     </BasicPage>
   );

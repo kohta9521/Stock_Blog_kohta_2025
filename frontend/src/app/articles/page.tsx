@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
+
+// hooks
+import useGetAllBlogs from "@/hooks/useGetAllBlogs";
 
 // components
 import BasicPage from "@/components/templates/BasicPage";
 import ArticlePage from "@/components/templates/ArticlePage";
+import ArticleCard from "@/components/molecules/ArticleCard";
 
 const Articles = () => {
+  // ブログ一覧を取得
+  const blogs = useGetAllBlogs();
+
   return (
     <BasicPage
       id="articles"
@@ -14,7 +22,19 @@ const Articles = () => {
     >
       {/* 一覧テンプレを作成 */}
       <ArticlePage id="article-page">
-        <h1>halle</h1>
+        {blogs.slice(0, 8).map((blog) => (
+          <ArticleCard
+            key={blog.id}
+            id={blog.id}
+            link={`/articles/${blog.id}`}
+            imageInsideTag={blog.imageInsideTag}
+            image={blog.image.url}
+            category={blog.category.name}
+            date={blog.date}
+            title={blog.title}
+            tags={blog.tags.map((tag) => tag.sample)}
+          />
+        ))}
       </ArticlePage>
     </BasicPage>
   );

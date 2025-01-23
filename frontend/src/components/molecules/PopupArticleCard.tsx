@@ -33,14 +33,14 @@ const PopupArticleCard = ({
     >
       <div className="w-full flex items-center justify-between">
         <Image
-          className="block h-full "
+          className="block w-4/12 h-full"
           src={image}
           width={300}
           height={100}
           alt={title}
         />
-        <div className="w-3/5 text-left ">
-          <h3 className="text-xl font-semibold mb-14">{title}</h3>
+        <div className="w-7/12 text-left ">
+          <h3 className="text-base font-semibold mb-14">{title}</h3>
           <div className="flex justify-between items-center">
             <p className="bg-red-600 text-white px-2 py-1.5 rounded-xl text-xs font-semibold">
               {category}
